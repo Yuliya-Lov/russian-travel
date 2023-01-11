@@ -1,0 +1,282 @@
+.root {
+  font-family:"Inter", sans-serif;
+  font-style: normal;
+  background: #2A2C2F;
+  color: #FFFFFF;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.content {
+  width: calc(100% - 96px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: calc(100% - 96px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 28px;
+  align-items: end;
+}
+
+
+.header__logo {
+  width: 176px;
+}
+
+.page-languages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 18px;
+
+}
+
+.page-languages__lang{
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.page-languages__lang_selected_true {
+  border-bottom: 1px #FFFFFF solid;
+}
+
+.russian-travel {
+  max-width: 985px;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 56px;
+
+}
+
+.russian-travel__title {
+  margin: 0;
+  max-width: 720px;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  padding-bottom: 32px;
+
+}
+.russian-travel__subtitle {
+  margin: 0;
+  max-width: 640px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+.russian-travel__main-illusration {
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.russian-travel__subline-text {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.russia-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-russia {
+  max-width: 985px;
+  padding-bottom: 92px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: calc((984px - 690px)/2);;
+}
+
+.about-russia__title {
+  margin: 0;
+  max-width: 690px;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  padding-bottom: 40px;
+}
+
+.about-russia__text {
+  margin: 0;
+  max-width: 690px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  padding-bottom: 33px;
+}
+
+.about-russia__facts {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 690px;
+}
+
+.about-russia__fact {
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.about-russia__span-accent {
+  margin: 0;
+  font-weight: 400;
+}
+
+.landscape-galery {
+  max-width: 1184px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 92px;
+
+}
+
+.landscape-galery__foto {
+  min-width: 284px;
+  max-width: 352px;
+  object-fit: cover;
+
+}
+
+@media screen and (max-width: 1270px) {
+  .russia-description {
+    align-items: flex-start;
+  }
+
+  .about-russia {
+    width: 100%;
+    align-self: center;
+    right: 0;
+  }
+  .landscape-galery__foto {
+    width: 300px;
+}
+
+  .russian-travel {
+    padding-top: 48px;
+  }
+  .russian-travel__subtitle {
+    padding-bottom: 56px;
+  }
+
+
+  .landscape-galery {
+    width: 100%;
+    grid-template-columns: repeat(3, minmax(300px, 352px));
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-self: center;
+    row-gap: 14px;
+    /* column-gap: calc((100% - 900px)/2); */
+    justify-items: stretch;
+  }
+
+  .landscape-galery__foto {
+    width: 100%;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+
+
+}
+
+/* @media screen and (max-width: 768px) {
+  .header {
+    width: calc(100% - 48px);
+}
+.russian-travel {
+  width: 100vw;
+  padding-bottom: 88px;
+}
+.russian-travel__subline-text {
+  padding-left: 24px;
+}
+
+.about-russia {
+  width: 100%;
+}
+
+.landscape-galery {
+  padding-bottom: 88px;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .header__logo {
+    width: 142px;
+  }
+  .page-languages__lang {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+  .header {
+    width: calc(100% - 32px);
+    padding-top: 16px;
+  }
+  .russian-travel {
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+  .russian-travel__title {
+    font-size: 40px;
+  line-height: 44px;
+  max-width: 288px;
+  padding-bottom: 16px;
+  }
+  .russian-travel__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 288px;
+    padding-bottom: 40px;
+  }
+  .russian-travel__subline-text {
+    padding-left: 16px;
+  }
+  .landscape-galery {
+    padding-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .root {
+    min-width: 320px;
+  }
+} */
