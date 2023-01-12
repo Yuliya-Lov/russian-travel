@@ -3,7 +3,6 @@
   font-style: normal;
   background: #2A2C2F;
   color: #FFFFFF;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -11,13 +10,14 @@
 }
 
 .content {
-  width: calc(100% - 96px);
+  width: calc(100vw - 96px);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .header {
+  max-width: 1184px;
   width: calc(100% - 96px);
   display: flex;
   flex-direction: row;
@@ -26,6 +26,10 @@
   align-items: end;
 }
 
+.link {
+  color:#FFFFFF;
+  text-decoration: none;
+}
 
 .header__logo {
   width: 176px;
@@ -45,12 +49,10 @@
 .page-languages__lang{
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 5px;
-  text-decoration: none;
 }
 
 .page-languages__lang_selected_true {
@@ -104,7 +106,8 @@
   align-self: flex-start;
 }
 
-.russia-description {
+.exploring-russia {
+  max-width: 985px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -171,11 +174,88 @@
   min-width: 284px;
   max-width: 352px;
   object-fit: cover;
+}
+.places {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 80px;
+  padding-bottom: 92px;
+}
 
+.place {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: auto auto;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.place__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+}
+
+.place__url-heading {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #AAAAAA;
+}
+.place__website {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.place__link {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration: underline;
+}
+
+.place__description {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.place__paragraph {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.cover__container {
+  max-width: 1184px;
+  width: calc(100vw - 96px);
+  max-height: 740px;
+  height: calc(.625*(100vw - 96px));
+  background-image: url(../images/railway_station.jpg);
+  background-size: contain;
+  background-color: rgb(42, 44, 47, 0.3);
+  opacity: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 92px;
+}
+
+.cover__title {
+  z-index: 1;
 }
 
 @media screen and (max-width: 1270px) {
-  .russia-description {
+  .exploring-russia {
     align-items: flex-start;
   }
 
@@ -184,9 +264,6 @@
     align-self: center;
     right: 0;
   }
-  .landscape-galery__foto {
-    width: 300px;
-}
 
   .russian-travel {
     padding-top: 48px;
@@ -201,8 +278,7 @@
     grid-template-columns: repeat(3, minmax(300px, 352px));
     grid-template-rows: 1fr 1fr 1fr 1fr;
     align-self: center;
-    row-gap: 14px;
-    /* column-gap: calc((100% - 900px)/2); */
+    gap: 14px;
     justify-items: stretch;
   }
 
@@ -213,44 +289,98 @@
 }
 
 @media screen and (max-width: 1020px) {
-
-
-}
-
-/* @media screen and (max-width: 768px) {
+  .content {
+    width: calc(100% - 48px);
+  }
   .header {
     width: calc(100% - 48px);
-}
-.russian-travel {
-  width: 100vw;
-  padding-bottom: 88px;
-}
-.russian-travel__subline-text {
-  padding-left: 24px;
+  }
+  .russian-travel__main-illusration {
+    width: 100vw;
+
+  }
+  .russian-travel {
+    padding-bottom: 88px;
+  }
+    .about-russia {
+      padding-bottom: 88px;
+    }
+
+  .about-russia__text {
+    max-width: 720px;
+  }
+
+  .landscape-galery {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(284px, 352px));
+    grid-template-rows: repeat(6, auto);
+    gap: 16px;
+  }
+
+
+
 }
 
-.about-russia {
-  width: 100%;
-}
 
-.landscape-galery {
-  padding-bottom: 88px;
-}
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 730px) {
   .header__logo {
     width: 142px;
+  }
+
+  .content {
+    width: calc(100% - 32px);
+  }
+  .header {
+    padding-top: 16px;
+    width: calc(100% - 32px);
   }
   .page-languages__lang {
     font-size: 18px;
     line-height: 20px;
     margin-bottom: 8px;
   }
-  .header {
-    width: calc(100% - 32px);
-    padding-top: 16px;
+
+  .russian-travel__title {
+    font-size: 10vw;
+    line-height: 1.04;
+width: min-content;
   }
+  .russian-travel__subtitle {
+    width: 70%;
+    font-size: 3.5vw;
+    line-height: 1.2;
+  }
+
+.landscape-galery {
+  padding-bottom: 88px;
+  gap: minmax(14px, 16px);
+}
+.about-russia__title {
+  font-size: 7vw;
+  line-height: 1.07;
+}
+
+}
+
+@media screen and (max-width: 630px) {
+  .landscape-galery {
+    grid-template-columns: repeat(1, minmax(284px, 100%));
+    grid-template-rows: repeat(12, 1fr);
+    gap: 14px;
+    justify-items: start;
+  }
+
+  /* .landscape-galery__foto:nth-of-type(2n) {
+    justify-self: end;
+  }
+
+  .landscape-galery__foto:nth-of-type(2n+1) {
+    justify-self: start;
+  } */
+}
+
+@media screen and (max-width: 430px) {
+
   .russian-travel {
     padding-top: 48px;
     padding-bottom: 64px;
@@ -262,21 +392,35 @@
   padding-bottom: 16px;
   }
   .russian-travel__subtitle {
+    width: 100%;
+    max-width: 295px;
     font-size: 16px;
     line-height: 20px;
-    max-width: 288px;
     padding-bottom: 40px;
   }
   .russian-travel__subline-text {
     padding-left: 16px;
   }
   .landscape-galery {
-    padding-bottom: 88px;
+    gap: 12px;
+    padding-bottom: 64px;
+  }
+  .about-russia__title {
+    max-width: 75%;
+    font-size: 32px;
+  line-height: 1.09;
+  }
+
+  .about-russia {
+    padding-bottom: 64px;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .root {
-    min-width: 320px;
+  .header {
+    min-width: calc(320px - 32px);
   }
-} */
+  .content {
+    min-width: calc(320px - 32px);
+  }
+}
