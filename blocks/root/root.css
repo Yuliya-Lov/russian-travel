@@ -1,0 +1,11 @@
+.root {
+  font-family:"Inter", "Arial", sans-serif;
+  font-style: normal;
+  background: #2A2C2F;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 319px;
+}

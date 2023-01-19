@@ -11,10 +11,11 @@
 <body class="root">
   <header class="header">
     <img class="header__logo" src="./images/logo.svg" alt="Логотип: карта России">
-    <ul class="page-languages">
-      <li><a class="link page-languages__lang page-languages__lang_selected_true" href="#">Ru</a></li>
-      <li class="page-languages__lang">En</li>
+    <ul class="header__languages">
+      <li><a class="link header__lang-link header__lang-link_selected_true" href="#">Ru</a></li>
+      <li><a class="link header__lang-link">En</a></li>
     </ul>
+
   </header>
   <main class="content">
     <section class="lead">
@@ -23,36 +24,37 @@
       <img class="lead__image" src="./images/travel_map.jpg" alt="Маршрут по России">
       <p class="lead__caption">ваша полка — верхняя</p>
     </section>
-    <section class="exploring-russia">
-      <div class="about-russia">
-        <h2 class="about-russia__title">Чего мы там не видели?</h2>
-        <p class="about-russia__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
-        <ul class="about-russia__facts">
-          <li class="about-russia__fact">Часовых поясов <span class="about-russia__span-accent">11</span>
+    <section class="intro">
+      <div class="intro__container">
+        <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но только 36% планируют провести отпуск в родной стране. Мол, чего мы тут, дома, не видели? На самом деле, Россия — это целая вселенная с ласковым морем юга, густыми лесами Саян и суровыми льдами плато Путорана. А ещё увидеть все эти красоты можно без миллионов на счету, загранпаспорта и многочасовых перелетов. Как, например, Вера Башмакова — смелая молодая мама, которая взяла в охапку троих детей, усадила их в свою «Ладу» и проехала 20 тысяч километров по родной стране. Мы выбрали и описали некоторые интересные места, достойные вашего отпуска.</p>
+        <ul class="intro__list">
+          <li class="intro__list-item">Часовых поясов <span class="intro__span-accent">11</span>
             </li>
-          <li class="about-russia__fact">Объектов природного наследия ЮНЕСКО <span class="about-russia__span-accent">12</span></li>
-          <li class="about-russia__fact">Объектов культурного наследия ЮНЕСКО <span class="about-russia__span-accent">16</span></li>
-          <li class="about-russia__fact">Природных заповедников <span class="about-russia__span-accent">105</span></li>
-          <li class="about-russia__fact">Аэропортов <span class="about-russia__span-accent">241</span></li>
+          <li class="intro__list-item">Объектов природного наследия ЮНЕСКО <span class="intro__span-accent">12</span></li>
+          <li class="intro__list-item">Объектов культурного наследия ЮНЕСКО <span class="intro__span-accent">16</span></li>
+          <li class="intro__list-item">Природных заповедников <span class="intro__span-accent">105</span></li>
+          <li class="intro__list-item">Аэропортов <span class="intro__span-accent">241</span></li>
         </ul>
       </div>
-      <div class="landscape-galery">
-        <img class="landscape-galery__foto" src="./images/galery_img_1.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_2.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_3.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_4.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_5.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_6.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_7.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_8.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_9.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_10.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_11.jpg" alt="Красоты России">
-        <img class="landscape-galery__foto" src="./images/galery_img_12.jpg" alt="Красоты России">
+      <div class="photo-grid">
+        <img class="photo-grid__item" src="./images/galery_img_1.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_2.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_3.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_4.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_5.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_6.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_7.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_8.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_9.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_10.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_11.jpg" alt="Красоты России">
+        <img class="photo-grid__item" src="./images/galery_img_12.jpg" alt="Красоты России">
       </div>
       <div class="places">
         <article class="place">
-          <h3 class="place__title">Куршская коса</h3>
+          <h3 class="place__title">Куршская
+            коса</h3>
           <div class="place__website">
             <p class="place__url-heading">URL</p>
             <a class="link place__link" href="http://park-kosa.ru">park-kosa.ru</a>
@@ -84,7 +86,7 @@
           <img class="place__image" src="./images/altay.jpg" alt="Алтай">
           <div class="place__description">
             <p class="place__paragraph">Алтай — одно из красивейших мест в России.
-              В первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
+              В&nbsp;первую очередь из-за гор: если ехать вдоль хребта, вы увидите склоны, усыпанные соснами, горные реки и озёра. А если вы откроете в автомобиле окна, сможете познакомиться с невидимым чудом здешних мест — горным воздухом.</p>
             <p class="place__paragraph">Климат на Алтае умеренный, поэтому ехать сюда лучше всего летом. Так вы увидите всё разнообразие местной флоры и фауны. По лесам Алтая бродят лоси, над хребтами летают орлы, а на равнинах пасутся косули. И знаменитые манулы — тоже обитатели Алтайского края.</p>
           </div>
         </article>
@@ -116,13 +118,24 @@
       </div>
     </section>
     <section class="cover">
-      <div class="cover__container">
-        <h2 class="cover__title">До Байкала «на собаках»</h2>
-        <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
-      </div>
+      <a class="cover__link-container" href="#">
+        <h2 class="cover__title">До Байкала
+          «на собаках»</h2>
+        <p class="cover__subtitle">По мотивам учебной темы
+          о Транссибе — путешествие
+          от столицы до Байкала на электричках.</p>
+      </a>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
+    <nav class="footer__links">
+    <a class="link footer__link" href="#">Карты</a>
+    <a class="link footer__link" href="#">Погода</a>
+    <a class="link footer__link" href="#">Расписание</a>
+    <a class="link footer__link" href="#">Календарь</a>
+    <a class="link footer__link" href="#">Путешествия</a>
+    </nav>
+    <p class="footer__copyright">© 2023. Ловыгина Юлия</p>
   </footer>
 </body>
 </html>

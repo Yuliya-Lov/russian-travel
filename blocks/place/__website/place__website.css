@@ -1,0 +1,8 @@
+.place__website {
+  width: max-content;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 10px;
+}
