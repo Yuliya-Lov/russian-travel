@@ -1,5 +1,5 @@
 # Учебный проект "Путешествие по России" <br>
-GitHub Pages: https://yuliya-lov.github.io/russian-travel/
+[Посмотреть реализованный проект на GitHub Pages](https://yuliya-lov.github.io/russian-travel/)
 -----------------------
 **"Путешествие по России"**  - это учебный проект, над которым я работаю, чтобы закрепить полученные знания и навыки в верстке по следующим темам:
 * работа с макетом;
@@ -16,4 +16,4 @@ GitHub Pages: https://yuliya-lov.github.io/russian-travel/
 -----------------------
 
 Данный проект - часть обучающего курса [ЯНДЕКС ПРАКТИКУМ](https://practicum.yandex.ru/). <br>
-Студент - Ловыгина Юлия, GitHub https://github.com/Yuliya-Lov/
+Студент - Ловыгина Юлия, [GitHub](https://github.com/Yuliya-Lov/).
