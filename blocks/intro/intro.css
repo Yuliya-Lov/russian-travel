@@ -1,13 +1,22 @@
 .intro {
+  width: 100%;
   max-width: 985px;
+  padding-bottom: 92px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  width: 100%;
+  align-self: center;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1020px) {
   .intro {
-    align-items: flex-start;
+    padding-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .intro {
+    padding-bottom: 64px;
   }
 }

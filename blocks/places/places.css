@@ -1,5 +1,6 @@
 .places {
   width: 100%;
+  max-width: 985px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
